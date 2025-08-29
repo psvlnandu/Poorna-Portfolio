@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Poorna-Portfolio/static/css/main.65d60b23.css",
+    "main.js": "/Poorna-Portfolio/static/js/main.7f79ab66.js",
+    "index.html": "/Poorna-Portfolio/index.html",
+    "main.65d60b23.css.map": "/Poorna-Portfolio/static/css/main.65d60b23.css.map",
+    "main.7f79ab66.js.map": "/Poorna-Portfolio/static/js/main.7f79ab66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65d60b23.css",
+    "static/js/main.7f79ab66.js"
+  ]
+}
