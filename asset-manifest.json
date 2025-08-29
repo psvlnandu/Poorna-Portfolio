@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Poorna-Portfolio/static/css/main.65d60b23.css",
-    "main.js": "/Poorna-Portfolio/static/js/main.9d839559.js",
+    "main.js": "/Poorna-Portfolio/static/js/main.87e0738a.js",
+    "static/media/me.jpg": "/Poorna-Portfolio/static/media/me.278843e5ec428a59f1b5.jpg",
     "index.html": "/Poorna-Portfolio/index.html",
     "main.65d60b23.css.map": "/Poorna-Portfolio/static/css/main.65d60b23.css.map",
-    "main.9d839559.js.map": "/Poorna-Portfolio/static/js/main.9d839559.js.map"
+    "main.87e0738a.js.map": "/Poorna-Portfolio/static/js/main.87e0738a.js.map"
   },
   "entrypoints": [
     "static/css/main.65d60b23.css",
-    "static/js/main.9d839559.js"
+    "static/js/main.87e0738a.js"
   ]
 }
