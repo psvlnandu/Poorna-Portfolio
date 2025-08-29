@@ -22,14 +22,14 @@ class Projects extends React.Component {
   }
   render() {
     const spotlightProjects = {
-      "No Man's Land": {
-        title: "no man's land",
+      "GaitSIT": {
+        title: "GaitSIT VR",
         desc:
-          "A third-person survival-mode game where you battle against time and space to return to Earth.",
-        techStack: "C# (UNITY)",
+          "A Gait Analysis application for physical therapy dept",
+        techStack: "C# (UNITY), VR",
         link: "https://github.com/slakh96/no-mans-land",
         open: "https://gazijarin.itch.io/no-mans-land",
-        image: "/assets/nomansland.png"
+        image: "/assets/poster-vr.png"
       },
       Truth: {
         title: "truth",
@@ -60,53 +60,31 @@ class Projects extends React.Component {
       }
     };
     const projects = {
-      "TDSB Homework Management Interface": {
+      "AWS Deployment with GitLab CI": {
         desc:
-          "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
-        techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-        open: "https://tdsb-app.herokuapp.com/"
+          "Designed and built a scalable, production-ready CI/CD pipeline to automate the ML model lifecycle ML Operations principle to automate the entire workflow from code commit to live cloud deployment, including build, test and deployment stages.",
+        techStack: "Python , CI CD, GitLab",
+        link: "https://github.com/psvlnandu/AWS-S3-EBS-Deployment-with-GitLab-CI"
       },
-      "Adam A.I.": {
+      "Fine-Tuned Emotional Classifier CLI": {
         desc:
-          "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
-        techStack: "Javascript, HTML / CSS",
-        link: "https://github.com/gazijarin/adamai",
-        open: "https://gazijarin.github.io/AdamAI/"
+          "Engineered a complete MLOps workflow to fine-tune a DistilBERT model for emotion classification, achieving decent accuracy on the target dataset, Developed and packaged the application into a professional-grade Command-Line Interface (CLI), making it easily deployable and installable via pip",
+        techStack: "Python, DistilBERT, Huggig Face",
+        link: "https://github.com/psvlnandu/Fine-Tuned-Emotional-Classifier-CLI",
+        open:""
       },
-      "Distributed Logging and Monitoring System": {
+      "Toxic Comment Classifier using GPT-2": {
         desc:
-          "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
-        techStack: "Node.js (Express.js), React.js, PostgreSQL",
-        link:
-          "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System"
-      },
-      "Odin Bot": {
-        desc:
-          "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
-        techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "https://github.com/gazijarin/OdinBot",
-        open: ""
-      },
-      "Game Centre": {
-        desc:
-          "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
-        techStack: "Java, Android Studio",
-        link: "https://github.com/gazijarin/gamecentre",
-        open: ""
-      },
-      "Minimax Stonehenge": {
-        desc:
-          "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
-        techStack: "Python",
-        link: "https://github.com/gazijarin/stonehenge",
-        open: ""
+          "Fine-tuned a GPT-2 model to effectively classify toxic online comments, achieving a high F1-score.Implemented custom text preprocessing and tokenization strategies specifically tailored for the GPT-2 architecture to optimize model performance. Experimented with various hyperparameters and training techniques to improve model accuracy and reduce training time.",
+        techStack: "Python, GPT2, Hugging face Spaces",
+        link:"https://github.com/psvlnandu/Toxic-Comment-Classifier-GPT2-Model",
+        open:"https://huggingface.co/raavip/gpt2-toxic-comment-classifier"
       }
     };
 
     return (
       <div id="projects">
-        <div className="section-header ">
+        {/* <div className="section-header ">
           <span className="section-title">/ pet projects</span>
         </div>
         <Carousel>
@@ -134,7 +112,10 @@ class Projects extends React.Component {
               </div>
             </Carousel.Item>
           ))}
-        </Carousel>
+        </Carousel> */}
+      <div className="section-header ">
+          <span className="section-title">projects</span>
+      </div>
         <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (

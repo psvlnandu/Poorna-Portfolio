@@ -25,23 +25,23 @@ class Intro extends React.Component {
   render() {
     return (
       <div id="intro">
-        <FractalTree></FractalTree>
+        {/* <FractalTree></FractalTree> */}
         <Typist avgTypingDelay={120}>
           <span className="intro-title">
             {"hi, "}
-            <span className="intro-name">{"gazi"}</span>
+            <span className="intro-name">{"Poorna"}</span>
             {" here."}
           </span>
         </Typist>
         <FadeInSection>
-          <div className="intro-subtitle">I create stuff sometimes.</div>
+          <div className="intro-subtitle">I create stuff</div>
           <div className="intro-desc">
-            I'm a software engineer from Toronto, Canada. I'm fascinated by
-            large-scale, high-impact products and contributed to major feature launches in
-            industry-leading services as well as apps that have 100M+ installs.
+            I am a software developer based in Upstate NY, 
+            passionate about building intelligent worlds by bridging the gap between robust software engineering and immersive AI/VR experiences. 
+            My expertise spans from creating cloud pipelines and fine-tuning AI models to contributing to published research
           </div>
           <a
-            href="mailto:gazijarin@gmail.com"
+            href="mailto:raavip@clarkson.edu"
             className="intro-contact"
           >
             <EmailRoundedIcon></EmailRoundedIcon>
