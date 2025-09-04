@@ -7,6 +7,9 @@ import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/NavBar.css";
+import resume from "../assets/R_ML_Standard.pdf";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { CloudDownloadSharp, FontDownloadOutlined } from "@material-ui/icons";
 
 class NavBar extends React.Component {
   render() {
@@ -21,6 +24,7 @@ class NavBar extends React.Component {
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
+              <Nav.Link href="#publications">Publications</Nav.Link>
             </Nav>
             <Nav className="ml-auto">
               <Nav.Link href="mailto:raavip@clarkson.edu">
@@ -32,9 +36,20 @@ class NavBar extends React.Component {
               <Nav.Link href="https://www.linkedin.com/in/psvl-nandu-r/" target="_blank">
                 <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
               </Nav.Link>
-              <Nav.Link href="https://medium.com/@raavip" target="_blank">
-                <BorderColorIcon style={{ fontSize: 20 }}></BorderColorIcon>
-              </Nav.Link>
+              <OverlayTrigger
+                placement="bottom" // where the tooltip appears
+                overlay={<Tooltip id="medium-tooltip">Medium</Tooltip>}>
+                <Nav.Link href="https://medium.com/@raavip" target="_blank">
+                  <BorderColorIcon style={{ fontSize: 20 }}></BorderColorIcon>
+                </Nav.Link>
+              </OverlayTrigger>
+              <OverlayTrigger
+                placement="bottom" // where the tooltip appears
+                overlay={<Tooltip id="resume-tooltip">Resume</Tooltip>}>
+                <Nav.Link href={resume} target="_blank">
+                  <CloudDownloadSharp style={{ fontSize: 20 }}></CloudDownloadSharp>
+                </Nav.Link>
+              </OverlayTrigger>
             </Nav>
           </Navbar.Collapse>
         </Container>
