@@ -63,7 +63,7 @@ class Projects extends React.Component {
       "AWS Deployment with GitLab CI": {
         desc:
           "Designed and built a scalable, production-ready CI/CD pipeline to automate the ML model lifecycle ML Operations principle to automate the entire workflow from code commit to live cloud deployment, including build, test and deployment stages.",
-        techStack: "Python , CI CD, GitLab",
+        techStack: "Python , CI CD, GitLab, AWS Elastic bean",
         link: "https://github.com/psvlnandu/AWS-S3-EBS-Deployment-with-GitLab-CI"
       },
       "Fine-Tuned Emotional Classifier CLI": {
@@ -114,7 +114,7 @@ class Projects extends React.Component {
           ))}
         </Carousel> */}
       <div className="section-header ">
-          <span className="section-title">projects</span>
+          <span className="section-title">pet projects</span>
       </div>
         <div className="project-container">
           <ul className="projects-grid">

@@ -86,7 +86,7 @@ const JobList = () => {
       jobTitle: "Research Assistant @",
       duration: "May 2024 - PRESENT",
       desc: [
-        "Created a luge track visualization tool for Lake Placid athletes by processing geometric data from various tracks using C++ and the Open Cascade library. Imported and rendered the resulting 3D models in a Unity environment.",
+        "Created a Unity-based tool to visualize luge tracks (Lake Placid, Park City) from geometric data processed with C++ and Open Cascade. The app allows coaches to analyze mistakes using interactive camera views. Also built a VR version in Unity to let athletes practice and train on the tracks in a virtual environment.",
         "Developed Gait Sensory Interaction Test (GaitSIT) using Unity to assess walking dysfunctions (gait analysis) in patients with VR Meta quest 3. ",
         "Developed an Android application for real-time iris detection using smartphone cameras & advanced ML models",
         "Working on an Audio Tampering detection for forensic use in federal investigations."
@@ -96,23 +96,32 @@ const JobList = () => {
       jobTitle: "Horizons Graduate Assistant @",
       duration: "AUG 2024 - PRESENT",
       desc: [
-        "Supported a mission-critical production system (Slate CRM) in a higher education environment, managing the student application lifecycle and ensuring data integrity for a key university program.",
+        "Supported a Slate CRM in a higher education environment, managing the student application lifecycle and ensuring data integrity for Horizons university program.",
         " Analyzed pre- and post-program survey data for camp attendees, identifying key areas of impact that informed strategy for the following year"
       ]
     },
     "EmbedSense Pvt Ltd": {
-      jobTitle: "Jr. Android developer",
+      jobTitle: "Jr. Android developer @",
       duration: "Jun 2023 - DEC 2023",
       desc: [
-       "Developed Hoist Pro ( a hoist monitoring app) & Ecotron (an environmental monitoring Android app), IntegratedWhatsApp Business API, leading to a 30% increase in customer engagement, and implemented Firebase authentication for enhanced security."
-  
+        "Developed two Android applications for an IoT startup:",
+        <>
+          <a href="https://www.embedsense.com/hoistpro">Hoist Pro</a>, a hoist maintenance app that connects to machines via TCP to track maintenance schedules and display due information
+        </>,
+        <>
+          <a href="https://www.embedsense.com/environment-sensing">Ecotron</a>, an environmental monitoring app for hospitals and labs that collects sensor data, visualizes gas levels, and provides real-time alerts. Implemented WhatsApp Business API and email notifications for alarms, added daily report generation with cloud integration, and used Firebase authentication to ensure secure access.
+        </>
       ]
     },
     "OSOS Pvt Ltd": {
       jobTitle: "Android Developer Intern @",
       duration: "JAN 2023- JUN 2023",
       desc: [
-        "Contributed to the development of Spaarks (A local networking app - available on play store: Link)"
+            <>
+              At <a href="https://www.spaarksweb.com/">Spaarks</a> I Implemented display of local businesses in a card-view list format on Android.
+            </>,  
+            "Fixed UI bugs for the status feature, similar to Instagram Stories.",
+            "Assisted in adding multi-language support, enabling the app to be used in different languages."
       ]
     },
    
