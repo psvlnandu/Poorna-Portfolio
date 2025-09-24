@@ -6,6 +6,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
+import toxic from "../assets/toxic.png";
+import insult from "../assets/insult.png";
+import gaitsit from "../assets/poster-vr.png";
+
 class Projects extends React.Component {
   constructor() {
     super();
@@ -29,25 +33,25 @@ class Projects extends React.Component {
         techStack: "C# (UNITY), VR",
         link: "https://github.com/slakh96/no-mans-land",
         open: "https://gazijarin.itch.io/no-mans-land",
-        image: "/assets/poster-vr.png"
+        image: gaitsit
       },
       Truth: {
-        title: "truth",
+        title: "Toxic Comment Classifier",
         desc:
-          "A three.js simulation of the planet system revolving around a monolith.",
-        techStack: "JAVASCRIPT (THREE.JS)",
-        link: "https://github.com/gazijarin/truth",
-        open: "https://gazijarin.github.io/Truth/",
-        image: "/assets/truth.png"
+          "fine-tunes a gpt2-medium model to detect toxicity in online comments.",
+        techStack: "Python, PyTorch, Hugging Face",
+        link: "https://github.com/psvlnandu/Toxic-Comment-Classifier-GPT2-Model",
+        open: "https://huggingface.co/spaces/raavip/CC_GPT2Model",
+        image: insult
       },
       "Tall Tales": {
-        title: "tall tales",
+         title: "Luge Track Visualization",
         desc:
-          "A multi-player story-telling web game for 3-5 players. Its usage of sockets to allow for concurrent gameplay, connecting friends across the internet.",
-        techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
+          "A VR and 3D visualization tool for luge athletes",
+        techStack: "Unity (C#), Blender, VR (Meta Quest 3)",
         link: "https://github.com/gazijarin/TallTales",
         open: "https://talltales.herokuapp.com/",
-        image: "/assets/talltales.png"
+        image: toxic
       },
       Portfolio: {
         title: "portfolio.js",
@@ -84,8 +88,8 @@ class Projects extends React.Component {
 
     return (
       <div id="projects">
-        {/* <div className="section-header ">
-          <span className="section-title">/ pet projects</span>
+         <div className="section-header ">
+          <span className="section-title">pet projects</span>
         </div>
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (
@@ -95,27 +99,19 @@ class Projects extends React.Component {
                 src={spotlightProjects[key]["image"]}
                 alt={key}
               />
-              <div className="caption-bg">
-                <Carousel.Caption>
-                  <h3>{spotlightProjects[key]["title"]}</h3>
-                  <p>
-                    {spotlightProjects[key]["desc"]}
-                    <p className="techStack">
-                      {spotlightProjects[key]["techStack"]}
-                    </p>
-                  </p>
-                  <ExternalLinks
-                    githubLink={spotlightProjects[key]["link"]}
-                    openLink={spotlightProjects[key]["open"]}
-                  ></ExternalLinks>
-                </Carousel.Caption>
-              </div>
+              <Carousel.Caption>
+                <h3>{spotlightProjects[key]["title"]}</h3>
+                <p>{spotlightProjects[key]["desc"]}</p>
+                <p className="techStack">{spotlightProjects[key]["techStack"]}</p>
+                <ExternalLinks
+                  githubLink={spotlightProjects[key]["link"]}
+                  openLink={spotlightProjects[key]["open"]}
+                ></ExternalLinks>
+              </Carousel.Caption>
+
             </Carousel.Item>
           ))}
-        </Carousel> */}
-      <div className="section-header ">
-          <span className="section-title">pet projects</span>
-      </div>
+        </Carousel> 
         <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
