@@ -45,7 +45,7 @@ class NavBar extends React.Component {
               <OverlayTrigger
                 placement="bottom" // where the tooltip appears
                 overlay={<Tooltip id="resume-tooltip">Resume</Tooltip>}>
-                <Nav.Link href="/assets/R_ML_Standard.pdf" target="_blank">
+                <Nav.Link href="/assets/R_Amazon_standards.pdf" target="_blank">
                   <CloudDownloadSharp style={{ fontSize: 20 }}></CloudDownloadSharp>
                 </Nav.Link>
               </OverlayTrigger>
