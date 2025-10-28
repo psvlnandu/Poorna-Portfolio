@@ -90,6 +90,14 @@ class Projects extends React.Component {
         link: "https://github.com/psvlnandu/Fine-Tuned-Emotional-Classifier-CLI",
         open:""
       },
+      
+      "Returns & Refunds": {
+        title: "Soundcore Refund Policy RAG",
+        desc: "A RAG-based chatbot that answers refund, replacement, and warranty questions using Soundcore’s official policy data for accurate, conversational support.",
+        techStack: "Python, RAG, Hugging face Spaces",
+        link:"",
+        open:"https://huggingface.co/spaces/raavip/RAG-documents"
+      },
       "Toxic Comment Classifier using GPT-2": {
         desc:
           "Fine-tuned a GPT-2 model to effectively classify",
