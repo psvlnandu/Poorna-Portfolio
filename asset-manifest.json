@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/Poorna-Portfolio/static/css/main.5f3f9b5e.css",
-    "main.js": "/Poorna-Portfolio/static/js/main.04eb790e.js",
+    "main.css": "/Poorna-Portfolio/static/css/main.5e9e5f6a.css",
+    "main.js": "/Poorna-Portfolio/static/js/main.519b99c3.js",
     "static/media/poster-vr.png": "/Poorna-Portfolio/static/media/poster-vr.6312ff02bc3e99b08e51.png",
+    "static/media/ANN01.png": "/Poorna-Portfolio/static/media/ANN01.954f29f05e26f6ed6c06.png",
     "static/media/me1.JPG": "/Poorna-Portfolio/static/media/me1.2d14098b83e7551a09a3.JPG",
+    "static/media/Clarkson Track Viz Logo (1).png": "/Poorna-Portfolio/static/media/Clarkson Track Viz Logo (1).b8e49e3bcb35932ae1ae.png",
+    "static/media/Chat GPT vs StudySquad.png": "/Poorna-Portfolio/static/media/Chat GPT vs StudySquad.f2e2e89ecbdf3a2094b0.png",
     "static/media/insult.png": "/Poorna-Portfolio/static/media/insult.a3de93253d717e79a67e.png",
-    "static/media/toxic.png": "/Poorna-Portfolio/static/media/toxic.e84b22c8b89685b6e26d.png",
     "index.html": "/Poorna-Portfolio/index.html",
-    "main.5f3f9b5e.css.map": "/Poorna-Portfolio/static/css/main.5f3f9b5e.css.map",
-    "main.04eb790e.js.map": "/Poorna-Portfolio/static/js/main.04eb790e.js.map"
+    "main.5e9e5f6a.css.map": "/Poorna-Portfolio/static/css/main.5e9e5f6a.css.map",
+    "main.519b99c3.js.map": "/Poorna-Portfolio/static/js/main.519b99c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f3f9b5e.css",
-    "static/js/main.04eb790e.js"
+    "static/css/main.5e9e5f6a.css",
+    "static/js/main.519b99c3.js"
   ]
 }
