@@ -11,6 +11,7 @@ import gaitsit from "../assets/poster-vr.png";
 import studySquad from "../assets/Chat GPT vs StudySquad.png"
 import luge from "../assets/Clarkson Track Viz Logo (1).png"
 import ann_generator from "../assets/ANN01.png"
+import soundcore from "../assets/soundcore_returns_.png"
 
 class Projects extends React.Component {
   constructor() {
@@ -66,6 +67,15 @@ class Projects extends React.Component {
         open: "https://huggingface.co/spaces/raavip/Compliant_AANGenerator",
         image: ann_generator
       } ,
+       "Returns & Refunds": {
+        title: "Soundcore Refund Policy RAG",
+        desc: 
+          "A RAG-based chatbot that answers refund, replacement, and warranty questions using Soundcore’s official policy data for accurate, conversational support.",
+        techStack: "OpenAI, LangChain,HuggingFace pipelines",
+        link:"",
+        open:"https://huggingface.co/spaces/raavip/RAG-documents",
+        image: soundcore
+      },
       "TCC": {
         title: "Toxic Comment Classifier",
         desc:
@@ -89,14 +99,6 @@ class Projects extends React.Component {
         techStack: "Python, DistilBERT, Huggig Face",
         link: "https://github.com/psvlnandu/Fine-Tuned-Emotional-Classifier-CLI",
         open:""
-      },
-      
-      "Returns & Refunds": {
-        title: "Soundcore Refund Policy RAG",
-        desc: "A RAG-based chatbot that answers refund, replacement, and warranty questions using Soundcore’s official policy data for accurate, conversational support.",
-        techStack: "Python, RAG, Hugging face Spaces",
-        link:"",
-        open:"https://huggingface.co/spaces/raavip/RAG-documents"
       },
       "Toxic Comment Classifier using GPT-2": {
         desc:
