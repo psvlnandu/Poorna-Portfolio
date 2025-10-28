@@ -6,9 +6,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
-import toxic from "../assets/toxic.png";
 import insult from "../assets/insult.png";
 import gaitsit from "../assets/poster-vr.png";
+import studySquad from "../assets/Chat GPT vs StudySquad.png"
+import luge from "../assets/Clarkson Track Viz Logo (1).png"
+import ann_generator from "../assets/ANN01.png"
 
 class Projects extends React.Component {
   constructor() {
@@ -31,11 +33,40 @@ class Projects extends React.Component {
         desc:
           "A Gait Analysis application for physical therapy dept",
         techStack: "C# (UNITY), VR",
-        link: "https://github.com/slakh96/no-mans-land",
-        open: "https://gazijarin.itch.io/no-mans-land",
+        // link: "https://www.linkedin.com/posts/shipley-center-for-innovation_meet-balance-gaitsit-a-previous-clarkson-activity-7315466941630947328-cwEY/",
+        open: "https://www.linkedin.com/posts/shipley-center-for-innovation_meet-balance-gaitsit-a-previous-clarkson-activity-7315466941630947328-cwEY/",
         image: gaitsit
       },
-      Truth: {
+      "StudySquad": {
+        title: "StudySquad",
+        desc:
+          "Your personal squad of agents to get you through the semester.",
+        techStack: "RAG, Gemini, OpenAI, FastAPI, Gardio",
+        link: "https://devpost.com/software/studysquad",
+        open: "https://www.linkedin.com/feed/update/urn:li:activity:7388985392961789952/",
+        image: studySquad
+      },
+      
+      "Luge": {
+         title: "Luge Track Visualization",
+        desc:
+        "A VR and 3D visualization tool developed for Olympic luge athletes. Due to confidentiality, project details will be shared after its official release by the team.",
+        techStack: "Unity (C#), Blender, VR, Opencascade, c++",
+        // link: "https://github.com/gazijarin/TallTales",
+        open: "https://www.usaluge.org/",
+        image: luge
+      },
+      "ANN": {
+        title: "Ethical AI: ANN Generator",
+        desc:
+          "AI tool that auto-generates Adverse Action Notice ",
+          // compliant responses for banks using RAG and OpenAI, helping reduce review time and regulatory risk.",
+        techStack: "RAG, OpenAI, HuggingFace Spaces",
+        link: "https://medium.com/@raavip/i-built-something-that-banks-never-did-it-before-ab55daea5d41",
+        open: "https://huggingface.co/spaces/raavip/Compliant_AANGenerator",
+        image: ann_generator
+      } ,
+      "TCC": {
         title: "Toxic Comment Classifier",
         desc:
           "fine-tunes a gpt2-medium model to detect toxicity in online comments.",
@@ -43,25 +74,7 @@ class Projects extends React.Component {
         link: "https://github.com/psvlnandu/Toxic-Comment-Classifier-GPT2-Model",
         open: "https://huggingface.co/spaces/raavip/CC_GPT2Model",
         image: insult
-      },
-      "Tall Tales": {
-         title: "Luge Track Visualization",
-        desc:
-          "A VR and 3D visualization tool for luge athletes",
-        techStack: "Unity (C#), Blender, VR (Meta Quest 3)",
-        link: "https://github.com/gazijarin/TallTales",
-        open: "https://talltales.herokuapp.com/",
-        image: toxic
-      },
-      Portfolio: {
-        title: "portfolio.js",
-        desc:
-          "A small JS library that helps with clear and succinct data presentation.",
-        techStack: "NODE.JS (EXPRESS.JS)",
-        link: "https://github.com/gazijarin/Portfolio.js",
-        open: "https://afternoon-ocean-92382.herokuapp.com/",
-        image: "/assets/portfolio.png"
-      }
+      }           
     };
     const projects = {
       "AWS Deployment with GitLab CI": {
@@ -79,7 +92,8 @@ class Projects extends React.Component {
       },
       "Toxic Comment Classifier using GPT-2": {
         desc:
-          "Fine-tuned a GPT-2 model to effectively classify toxic online comments, achieving a high F1-score.Implemented custom text preprocessing and tokenization strategies specifically tailored for the GPT-2 architecture to optimize model performance. Experimented with various hyperparameters and training techniques to improve model accuracy and reduce training time.",
+          "Fine-tuned a GPT-2 model to effectively classify",
+          //  toxic online comments, achieving a high F1-score.Implemented custom text preprocessing and tokenization strategies specifically tailored for the GPT-2 architecture to optimize model performance. Experimented with various hyperparameters and training techniques to improve model accuracy and reduce training time.",
         techStack: "Python, GPT2, Hugging face Spaces",
         link:"https://github.com/psvlnandu/Toxic-Comment-Classifier-GPT2-Model",
         open:"https://huggingface.co/raavip/gpt2-toxic-comment-classifier"
@@ -89,7 +103,7 @@ class Projects extends React.Component {
     return (
       <div id="projects">
          <div className="section-header ">
-          <span className="section-title">pet projects</span>
+          <span className="section-title">projects</span>
         </div>
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (
@@ -112,7 +126,7 @@ class Projects extends React.Component {
             </Carousel.Item>
           ))}
         </Carousel> 
-        <div className="project-container">
+        {/* <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
               <FadeInSection delay={`${i + 1}00ms`}>
@@ -136,7 +150,7 @@ class Projects extends React.Component {
               </FadeInSection>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     );
   }

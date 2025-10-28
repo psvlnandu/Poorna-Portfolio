@@ -5,7 +5,6 @@ import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import FadeInSection from "./FadeInSection";
-import FractalTree from "./FractalTree";
 
 class Intro extends React.Component {
   constructor() {
@@ -25,7 +24,6 @@ class Intro extends React.Component {
   render() {
     return (
       <div id="intro">
-        {/* <FractalTree></FractalTree> */}
         <Typist avgTypingDelay={120}>
           <span className="intro-title">
             {"hi, "}
@@ -34,7 +32,7 @@ class Intro extends React.Component {
           </span>
         </Typist>
         <FadeInSection>
-          <div className="intro-subtitle">I create stuff</div>
+          <div className="intro-subtitle">I create stuff</div>        
           <div className="intro-desc">
             I am a software developer based in Upstate NY, 
             passionate about building intelligent worlds by bridging the gap between robust software engineering and immersive AI/VR experiences. 
